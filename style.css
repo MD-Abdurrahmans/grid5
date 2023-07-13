@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-container{
+
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+font-size: 1.2vmax;
+}
+.grid-image,.grid-text{
+    width: 50%;
+}
+.grid-image img{
+width: 100%;
+}
+
+.grid-2{
+    flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width:576px) {
+
+    .grid-container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        font-size: 2vmin;
+        }
+        .grid-image,.grid-text{
+            width: 100%;
+        }
+    
+}
